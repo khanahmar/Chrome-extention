@@ -1,12 +1,13 @@
 let saveBtn = document.getElementById("input-btn");
 const inputEl = document.getElementById("input-el");
 const ulEl = document.getElementById("ul-el");
-let myLeads = [];
 let listItems = "";
+let myLeads = [];
 
 saveBtn.addEventListener("click", (e) => {
   myLeads.push(inputEl.value);
   inputEl.value = "";
+  listItems = "";
   renderLeads();
 });
 
